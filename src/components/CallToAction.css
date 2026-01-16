@@ -1,0 +1,23 @@
+.cta {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-text {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .cta-text {
+    font-size: 1.2rem;
+  }
+}
