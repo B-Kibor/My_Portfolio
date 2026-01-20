@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <img src="/My_Portfolio/assets/images/logo.png" alt="Logo" onError={(e) => e.target.style.display = 'none'} />
+          <img src={`${process.env.PUBLIC_URL}/assets/images/logo.png`} alt="Logo" onError={(e) => e.target.style.display = 'none'} />
         </div>
         <div className={`nav-menu ${menuOpen ? 'active' : ''}`}>
           <Link to="home" smooth duration={500} className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>

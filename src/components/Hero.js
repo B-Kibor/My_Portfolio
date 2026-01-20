@@ -53,7 +53,7 @@ const Hero = () => {
           }}
         >
           <img 
-            src="/My_Portfolio/assets/images/banner/hero.jpg" 
+            src={`${process.env.PUBLIC_URL}/assets/images/banner/hero.jpg`} 
             alt="Beatrice Kibor"
           />
         </motion.div>
