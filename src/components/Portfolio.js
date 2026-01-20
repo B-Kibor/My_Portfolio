@@ -8,17 +8,17 @@ const Portfolio = () => {
   const projects = [
     { 
       title: 'Project One', 
-      image: '/assets/images/work/Screenshot from 2026-01-19 10-50-28.png', 
+      image: '/My_Portfolio/assets/images/work/Screenshot from 2026-01-19 10-50-28.png', 
       link: 'https://github.com/B-Kibor/project-one' 
     },
     { 
       title: 'Project Two', 
-      image: '/assets/images/work/Screenshot from 2026-01-19 11-00-43.png', 
+      image: '/My_Portfolio/assets/images/work/Screenshot from 2026-01-19 11-00-43.png', 
       link: 'https://github.com/B-Kibor/project-two' 
     },
     { 
       title: 'Project Three', 
-      image: '/assets/images/work/Screenshot from 2026-01-20 09-13-57.png', 
+      image: '/My_Portfolio/assets/images/work/Screenshot from 2026-01-20 09-13-57.png', 
       link: 'https://github.com/B-Kibor/project-three' 
     }
   ];
