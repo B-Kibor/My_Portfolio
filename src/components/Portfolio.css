@@ -1,11 +1,98 @@
 .portfolio {
   padding: 6rem 2rem;
-  background: #fff;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fff0 50%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-art-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.portfolio-art-bg .art-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.06;
+  animation: float 25s infinite ease-in-out;
+}
+
+.portfolio-art-bg .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, #00ff00, transparent);
+  top: 10%;
+  left: -100px;
+}
+
+.portfolio-art-bg .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, #1a1a1a, transparent);
+  top: 50%;
+  right: -80px;
+  animation-delay: 8s;
+}
+
+.portfolio-art-bg .circle-3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #00ff00, transparent);
+  bottom: 10%;
+  left: 50%;
+  animation-delay: 15s;
+}
+
+.portfolio-art-bg .art-line {
+  position: absolute;
+  height: 2px;
+  opacity: 0.08;
+  animation: slide 18s infinite linear;
+}
+
+.portfolio-art-bg .line-1 {
+  width: 45%;
+  background: linear-gradient(90deg, transparent, #00ff00, transparent);
+  top: 25%;
+  left: -45%;
+}
+
+.portfolio-art-bg .line-2 {
+  width: 55%;
+  background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  bottom: 35%;
+  right: -55%;
+  animation-delay: 9s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -40px) scale(1.15);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
 }
 
 .portfolio-container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .projects-grid {
@@ -21,6 +108,92 @@
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.9));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 85%;
+  max-height: 85%;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  animation: slideIn 0.4s ease;
+  border: 2px solid rgba(0, 170, 0, 0.2);
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 170, 0, 0.1);
+}
+
+.modal-content h3 {
+  margin-top: 1.5rem;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: linear-gradient(135deg, #00aa00, #1a1a1a);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close:hover {
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 8px 25px rgba(0, 170, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .project-image {
@@ -45,7 +218,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(102, 126, 234, 0.95);
+  background: rgba(0, 170, 0, 0.95);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,7 +255,7 @@
 .more-btn {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background: #667eea;
+  background: #00aa00;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
@@ -91,7 +264,7 @@
 }
 
 .more-btn:hover {
-  background: #764ba2;
+  background: #1a1a1a;
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }

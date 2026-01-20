@@ -5,6 +5,14 @@ import './CallToAction.css';
 const CallToAction = () => {
   return (
     <section className="cta">
+      <div className="cta-art-bg">
+        <div className="art-circle circle-1"></div>
+        <div className="art-circle circle-2"></div>
+        <div className="art-circle circle-3"></div>
+        <div className="art-line line-1"></div>
+        <div className="art-line line-2"></div>
+        <div className="art-line line-3"></div>
+      </div>
       <motion.div 
         className="cta-content"
         initial={{ opacity: 0, y: 30 }}
@@ -13,7 +21,7 @@ const CallToAction = () => {
         transition={{ duration: 0.8 }}
       >
         <p className="cta-text">
-          Life is not about what you do, it's about the impact you cause and how you make others feel.
+          Code is poetry written in logic, and every line tells a story of innovation and possibility.
         </p>
       </motion.div>
     </section>

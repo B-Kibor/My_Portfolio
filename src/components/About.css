@@ -1,11 +1,89 @@
 .about {
   padding: 6rem 2rem;
-  background: #f8f9fa;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e9 50%, #f8f9fa 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-art-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.about-art-bg .art-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+  animation: float 20s infinite ease-in-out;
+}
+
+.about-art-bg .circle-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #00ff00, transparent);
+  top: -150px;
+  right: -100px;
+}
+
+.about-art-bg .circle-2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #1a1a1a, transparent);
+  bottom: -100px;
+  left: -80px;
+  animation-delay: 7s;
+}
+
+.about-art-bg .art-line {
+  position: absolute;
+  height: 2px;
+  opacity: 0.1;
+  animation: slide 15s infinite linear;
+}
+
+.about-art-bg .line-1 {
+  width: 50%;
+  background: linear-gradient(90deg, transparent, #00ff00, transparent);
+  top: 30%;
+  left: -50%;
+}
+
+.about-art-bg .line-2 {
+  width: 60%;
+  background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  bottom: 30%;
+  right: -60%;
+  animation-delay: 7s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
 }
 
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .about-content {
@@ -41,7 +119,7 @@
 
 .info-item i {
   font-size: 1.5rem;
-  color: #667eea;
+  color: #00aa00;
 }
 
 .skills-grid {
@@ -65,7 +143,7 @@
 
 .skill-card i {
   font-size: 3rem;
-  color: #667eea;
+  color: #00aa00;
   margin-bottom: 1rem;
 }
 

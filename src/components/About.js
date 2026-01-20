@@ -14,6 +14,12 @@ const About = () => {
 
   return (
     <section id="about" className="about">
+      <div className="about-art-bg">
+        <div className="art-circle circle-1"></div>
+        <div className="art-circle circle-2"></div>
+        <div className="art-line line-1"></div>
+        <div className="art-line line-2"></div>
+      </div>
       <div className="about-container">
         <motion.h2 
           className="section-title"

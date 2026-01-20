@@ -11,6 +11,12 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
+      <div className="contact-art-bg">
+        <div className="art-circle circle-1"></div>
+        <div className="art-circle circle-2"></div>
+        <div className="art-line line-1"></div>
+        <div className="art-line line-2"></div>
+      </div>
       <div className="contact-container">
         <motion.div
           initial={{ opacity: 0 }}

@@ -1,5 +1,5 @@
 .footer {
-  background: #2c3e50;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d4d0d 50%, #1a1a1a 100%);
   color: #fff;
   padding: 3rem 2rem;
 }
@@ -31,7 +31,7 @@
 }
 
 .footer-links a:hover {
-  color: #667eea;
+  color: #00aa00;
 }
 
 .footer-copyright {
@@ -56,7 +56,7 @@
 }
 
 .footer-contact a:hover {
-  color: #667eea;
+  color: #00aa00;
 }
 
 .footer-social {
@@ -72,7 +72,7 @@
 
 .footer-social a:hover {
   transform: translateY(-5px);
-  color: #667eea;
+  color: #00aa00;
 }
 
 @media (max-width: 768px) {

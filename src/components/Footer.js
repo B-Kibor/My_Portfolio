@@ -12,7 +12,7 @@ const Footer = () => {
             <a href="#work">Projects</a>
             <a href="#contact">Contact</a>
           </div>
-          <p className="footer-copyright">Beatrice Kibor | Software Developer &copy; 2020</p>
+          <p className="footer-copyright">Beatrice Kibor | Software Developer &copy; 2026</p>
         </div>
         <div className="footer-section">
           <div className="footer-contact">
