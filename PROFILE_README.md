@@ -1,6 +1,8 @@
 # Hi there, I'm Beatrice Kibor! 👋
 
 <div align="center">
+  <img src="https://via.placeholder.com/150x150/00AA00/FFFFFF?text=BK" alt="Profile Picture" width="150" height="150" style="border-radius: 50%;" />
+  <br><br>
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=00AA00&center=true&vCenter=true&width=600&lines=Full-Stack+UI+Designer;Web+Developer;React+Enthusiast;Problem+Solver" alt="Typing SVG" />
 </div>
 
@@ -50,20 +52,6 @@ A modern, responsive portfolio built with **React** and **Framer Motion**, featu
 - 🚀 Deployed on GitHub Pages
 
 **Tech Used:** React, Framer Motion, CSS3, GitHub Pages
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=B-Kibor&show_icons=true&theme=dark&bg_color=0d1117&title_color=00AA00&icon_color=00AA00&text_color=ffffff&border_color=00AA00" alt="GitHub Stats" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=B-Kibor&theme=dark&background=0d1117&ring=00AA00&fire=00AA00&currStreakLabel=00AA00&border=00AA00" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=B-Kibor&layout=compact&theme=dark&bg_color=0d1117&title_color=00AA00&text_color=ffffff&border_color=00AA00" alt="Top Languages" />
-</div>
 
 ## 🤝 Let's Connect!
 
