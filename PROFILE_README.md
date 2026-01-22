@@ -67,9 +67,5 @@ A modern, responsive portfolio built with **React** and **Framer Motion**, featu
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=B-Kibor&color=00AA00&style=flat-square&label=Profile+Views" alt="Profile Views" />
-</div>
-
-<div align="center">
   <i>⭐️ From [B-Kibor](https://github.com/B-Kibor)</i>
 </div>
